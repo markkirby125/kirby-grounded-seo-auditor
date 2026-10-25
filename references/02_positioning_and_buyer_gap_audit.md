@@ -15,7 +15,7 @@ Method: April Dunford, *Obviously Awesome*. Work as a positioning analyst.
 1. Crawl the root domain and the main service or product pages (module 01, section 5).
 2. Draft the file from the live site and the user's own words only. End every line in the file with one tag, not only the ICP lines the template shows:
    - `Verified (URL)`: a fact you read on the live page.
-   - `User-stated`: a fact the user's request or reply states, in words you can quote. Use this tag only when the user said it.
+   - `User-stated`: a fact the user's request or reply states, in words you can quote. Use this tag only when the user said it, and use it on a whole line or not at all. Never write "User-stated (partly)". If a line mixes what the user said with something else, split it into one line per fact and tag each line on its own.
    - `Missing`: everything else. A fact you infer from a URL, the business type or common sense is not `User-stated`. Write `Missing`, and add "inferred from [source], unconfirmed" if it helps the owner. Do not fill a line with guessed examples.
 3. Ask the user to fill every `Missing` line. Voice dictation or pasted text is fine.
 4. Do not invent prices, guarantees, case studies or client names to fill a gap.

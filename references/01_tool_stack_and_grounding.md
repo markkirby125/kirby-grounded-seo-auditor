@@ -44,6 +44,7 @@ Tool names change between server versions. Check what the session exposes before
 ## 3. When a Source Is Missing
 
 - Write the literal string `[Pending Connection]` in place of every number that source would give.
+- A call that errors counts as a missing source. This covers `NOT_FOUND`, auth or scope errors, timeouts and fetch failures such as `ENOTFOUND`. Do not retry with a guessed argument or a different project. Record the tool, the arguments (never secrets) and the first line of the error as a row in the evidence log (section 6), then write `[Pending Connection]` for everything that call would have supplied.
 - Ask the user for a manual export. Name the exact export:
   - GSC: Performance > Queries and Pages, last 30 to 90 days, CSV.
   - GA4: Reports > Acquisition > Traffic acquisition, filtered to Organic Search, same dates.
@@ -77,10 +78,11 @@ Tool names change between server versions. Check what the session exposes before
 Keep a running list. Every number in later modules must trace to one row.
 
 ```markdown
-| ID | Metric / fact | Value | Tool | Date range / fetch date |
-|---|---|---|---|---|
-| E1 | Organic clicks | 1,234 | get_search_console_performance | 2026-09-25 to 2026-10-24 |
-| E2 | AI visibility batch, credits committed | 450 | estimate_ai_visibility_cost | 2026-10-24 |
+| ID | Metric / fact | Value | Tool | Date range / fetch date | Arguments / error |
+|---|---|---|---|---|---|
+| E1 | Organic clicks | 1,234 | get_search_console_performance | 2026-09-25 to 2026-10-24 | project [id] |
+| E2 | AI visibility batch, credits committed | 450 | estimate_ai_visibility_cost | 2026-10-24 | 8 queries × 3 engines |
+| E3 | GA4 organic overview | [Pending Connection] | get_google_analytics_organic_overview | 2026-10-24 | project [id]; NOT_FOUND |
 ```
 
-If a value has no row, it does not go in the report.
+If a value has no row, it does not go in the report. A failed call gets a row too, with `[Pending Connection]` as the value and the first line of the error in the last column.
