@@ -2,7 +2,7 @@
 
 **Purpose:** Draft the schema and page copy, stop at a human review gate, then build a single-screen dashboard.
 
-Nothing in this module publishes anything.
+Nothing in this module publishes anything until the owner approves it at the review gate (section 3).
 
 ---
 
@@ -93,7 +93,7 @@ Build one screen. A single HTML or React artifact, saved as `dashboard.html` (or
 **Data rules**
 
 - Every tile reads from a named source (GSC, GA4, scorecard, roadmap).
-- If the source is missing, the tile shows `[Pending Connection]` and the name of the source. No placeholder numbers. No sample data. No zero.
+- If the source is missing, the tile shows `[Pending Connection]` and the name of the source. No placeholder numbers. No sample data. Do not show a zero in place of missing data. A zero the source actually reports is real and is shown.
 - Show the date range and last refresh time on every data tile.
 - The checklist and actions tiles use the user's own roadmap and scorecard files. If those do not exist, they show `[Pending Connection]` too.
 - A static page cannot call a connector. State whether the numbers are a snapshot (pulled now, with the date) or live. Do not call a snapshot live.

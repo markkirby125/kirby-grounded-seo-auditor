@@ -57,7 +57,7 @@ Date: [YYYY-MM-DD]
 
 ## 2. The Big Five Buyer Questions
 
-Method: Marcus Sheridan, *They Ask, You Answer*. Read the site as a sceptical first-time buyer. For each question, find the page that answers it. If you cannot find one, it is a gap.
+Method: after Marcus Sheridan, *They Ask, You Answer*. The source summary calls these five questions his "Big Five". His published list is cost, problems, comparisons, reviews and best-of, so Risks and Alternatives are this skill's substitution for Reviews and Best-of. Read the site as a sceptical first-time buyer. For each question, find the page that answers it. If you cannot find one, it is a gap.
 
 | Question | Test | Typical gap |
 |---|---|---|

@@ -15,7 +15,7 @@ The source video uses three tools: Composio MCP (GA4 and GSC), DataForSEO MCP (k
 | Search volume, CPC, difficulty | DataForSEO MCP | openseo MCP `get_keyword_metrics`, `research_keywords`; skill `seo-dataforseo` | DataForSEO MCP direct |
 | Live SERP and competitors | DataForSEO MCP | openseo MCP `get_serp_results`, `find_serp_competitors`, `get_ranked_keywords` | skill `seo-dataforseo` |
 | Backlinks | DataForSEO MCP | openseo MCP `get_backlinks_overview`, `get_backlinks_profile` | skill `seo-dataforseo` |
-| AI mentions and citations | DataForSEO MCP | openseo MCP `get_ai_visibility_results`, `get_ai_visibility_sources`, `run_ai_visibility_check` | Manual check (section 4) |
+| AI mentions and citations | DataForSEO MCP | openseo MCP `get_ai_visibility_results`, `get_ai_visibility_sources`, `run_ai_visibility_check` | Manual check (module 03, section 2) |
 | Site crawl, on-page data | Firecrawl | openseo MCP `run_site_audit`, `get_audit_issues`, `get_audit_pages`; skill `seo-firecrawl` | Web fetch of single pages |
 
 Tool names change between server versions. Check what the session exposes before you call anything. If a named tool is absent, treat that need as missing.

@@ -44,7 +44,7 @@ Use GA4 organic landing pages (when connected) to check that GSC clicks reach pa
 | "[query]" | [engine] | No | competitor.com/page | Price table | E7 |
 ```
 
-Before the batch, state the estimated total credits in one sentence: use `estimate_ai_visibility_cost`, or queries × engines if there is no estimate tool. Ask for approval if it is over 2,000 credits.
+Before the batch, state the estimated total credits in one sentence from `estimate_ai_visibility_cost`. If there is no estimate tool, state the call count (queries × engines), say that it is a count and not a cost, and ask the user for the per-call price. Ask for approval if the estimate is over 2,000 credits.
 
 ---
 
