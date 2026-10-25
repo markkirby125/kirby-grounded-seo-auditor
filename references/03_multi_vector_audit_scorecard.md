@@ -35,7 +35,7 @@ Use GA4 organic landing pages (when connected) to check that GSC clicks reach pa
 
 ## 2. AI Search Citation Benchmark
 
-1. Choose 5 to 15 core queries: the buyer questions from module 02 (or the ones the user supplies for a scorecard-only run) plus the top unbranded commercial queries.
+1. Choose 5 to 15 core queries: the buyer questions from module 02 (or the ones the user supplies for a scorecard-only run) plus the top unbranded commercial queries. Label any query that does not come from GSC, keyword data or the user as `candidate (unverified)` in the Query column. A candidate query gets no volume, CPC or position, and it does not feed a score until data confirms it.
 2. For each query, record which brands and URLs the AI answers cite. Use `get_ai_visibility_results` and `get_ai_visibility_sources` when connected, or the DataForSEO AI data via `seo-dataforseo`.
 3. If no tool is connected, ask the user to run the queries by hand in the engines they care about and paste the answers. Do not recall from memory what an engine "usually" says.
 4. Record whether the site is cited, mentioned without a link, or absent.

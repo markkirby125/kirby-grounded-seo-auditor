@@ -13,7 +13,10 @@ Method: April Dunford, *Obviously Awesome*. Work as a positioning analyst.
 **Steps**
 
 1. Crawl the root domain and the main service or product pages (module 01, section 5).
-2. Draft the file from what is on the live site only. End every line in the file with `Verified (URL)` or `Missing`, not only the ICP lines the template shows.
+2. Draft the file from the live site and the user's own words only. End every line in the file with one tag, not only the ICP lines the template shows:
+   - `Verified (URL)`: a fact you read on the live page.
+   - `User-stated`: a fact the user's request or reply states, in words you can quote. Use this tag only when the user said it.
+   - `Missing`: everything else. A fact you infer from a URL, the business type or common sense is not `User-stated`. Write `Missing`, and add "inferred from [source], unconfirmed" if it helps the owner. Do not fill a line with guessed examples.
 3. Ask the user to fill every `Missing` line. Voice dictation or pasted text is fine.
 4. Do not invent prices, guarantees, case studies or client names to fill a gap.
 5. Save the file and use it as context for modules 03 to 05.
@@ -23,12 +26,12 @@ Method: April Dunford, *Obviously Awesome*. Work as a positioning analyst.
 ```markdown
 # About My Business: [Domain]
 Date: [YYYY-MM-DD]
-(End every line below with `Verified (URL)` or `Missing`.)
+(End every line below with `Verified (URL)`, `User-stated` or `Missing`.)
 
 ## Ideal customer (ICP)
-- Who they are: ...                         [Verified (URL) / Missing]
-- Situation that makes them buy: ...        [Verified (URL) / Missing]
-- Who it is NOT for: ...                    [Verified (URL) / Missing]
+- Who they are: ...                         [Verified (URL) / User-stated / Missing]
+- Situation that makes them buy: ...        [Verified (URL) / User-stated / Missing]
+- Who it is NOT for: ...                    [Verified (URL) / User-stated / Missing]
 
 ## Value proposition
 - What it does, in one sentence: ...
@@ -67,7 +70,7 @@ Method: after Marcus Sheridan, *They Ask, You Answer*. The source summary calls 
 | **Comparisons** | Is there a page that compares the offer with named alternatives, with criteria? | No comparison page |
 | **Alternatives** | Does the site discuss other ways to solve the problem, including DIY or an agency? | Competitors never mentioned |
 
-For each gap record: the question, the URL checked, what you found, and the buyer search it fails (for example "[service] cost", "[brand] vs [competitor]"). Check volume for those searches with module 01 tools. If keyword data is missing, write `[Pending Connection]`.
+For each gap record: the question, the URL checked, what you found, and the buyer search it fails (for example "[service] cost", "[brand] vs [competitor]"). Label any search that does not come from GSC, keyword data or the user as `candidate (unverified)` in the "Search it fails" column, and give it no volume. Check volume for the rest with module 01 tools. If keyword data is missing, write `[Pending Connection]`.
 
 ---
 
