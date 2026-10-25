@@ -13,7 +13,7 @@ A money page is a URL that sells: a service, product, course or booking page. Pi
 For each money page:
 
 1. Fetch the live page. Quote the current title, H1 and first 100 words.
-2. Name the target query and its intent. Take volume and CPC from `get_keyword_metrics` or `[Pending Connection]`.
+2. Name the target query and its intent. Take volume and CPC from `get_keyword_metrics` or `[Pending Connection]`. A target query that does not come from GSC, keyword data or the user is labelled `candidate (unverified)`, gets no volume or CPC, and does not feed a Payoff score until data confirms it.
 3. Check the SERP for the query (`get_serp_results`). Note what the top results show that this page does not (price, proof, comparison, FAQ).
 4. List the changes:
    - Title and H1 that match the query and say what the buyer gets.
@@ -35,7 +35,7 @@ For each money page:
 2. For each pillar, list 5 to 10 cluster articles. Each cluster article:
    - Answers one specific buyer question.
    - Links to its pillar and to the money page.
-   - Has a target query with data, or `[Pending Connection]`.
+   - Has a target query with data, or the label `candidate (unverified)` with `[Pending Connection]` for volume. A candidate query is a placeholder, not a plan: do not write the article until data confirms the query.
 3. Check each target query against the site's existing pages. Do not plan an article for a query an existing page already ranks for. Improve that page.
 4. Drop any cluster idea you cannot tie to a buyer question or a query.
 
