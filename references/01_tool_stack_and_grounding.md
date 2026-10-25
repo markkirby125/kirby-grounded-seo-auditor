@@ -85,4 +85,4 @@ Keep a running list. Every number in later modules must trace to one row.
 | E3 | GA4 organic overview | [Pending Connection] | get_google_analytics_organic_overview | 2026-10-24 | project [id]; NOT_FOUND |
 ```
 
-If a value has no row, it does not go in the report. A failed call gets a row too, with `[Pending Connection]` as the value and the first line of the error in the last column.
+If a value has no row, it does not go in the report. A failed call gets a row too, with `[Pending Connection]` as the value and the first line of the error in the last column. A row covers only the exact URL, query or project in its own columns: a row for the homepage does not cover `/boiler-installation`. For a page you did not request because an earlier call to the same host failed, write `[Pending Connection]` for its values and name that failed row by its real id and error, for example "host unreachable, see [id of the failed row]". Never cite a row that does not exist, and never cite a row as if that page had been fetched. `[Pending Connection]` is a marker, not a sourced value, so it needs no row of its own.
