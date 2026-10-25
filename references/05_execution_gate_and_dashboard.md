@@ -48,7 +48,7 @@ Draft these for the pages in the scorecard. Use only facts from `about-my-busine
 
 Hand the wording rules (anti-slop, BLUF layout, GEO structure) to [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md).
 
-**Delivery format** (save as `onpage-assets.md`)
+**Delivery format** (save as `onpage-assets.md`). In the Schema line, give the URL and date of the rendered-HTML check. If no rendered page exists yet, write `[Pending Connection]` and hold the schema until the check can run. A value that fails the check is removed or added to the page first, as section 1 says.
 
 ```markdown
 ## [URL]
@@ -59,7 +59,7 @@ Hand the wording rules (anti-slop, BLUF layout, GEO structure) to [`kirby-aiseo-
 - Proposed hero (BLUF): ...
 - FAQ items: ...
 - Evidence for each fact: [URL / owner file / E-number]
-- Schema: [core type] - values checked against rendered HTML: yes/no
+- Schema: [core type] - values checked against rendered HTML at [URL] on [date]
 ```
 
 ---
@@ -95,6 +95,7 @@ Build one screen. A single HTML or React artifact, saved as `dashboard.html` (or
 - Every tile reads from a named source (GSC, GA4, scorecard, roadmap).
 - If the source is missing, the tile shows `[Pending Connection]` and the name of the source. No placeholder numbers. No sample data. Do not show a zero in place of missing data. A zero the source actually reports is real and is shown.
 - Show the date range and last refresh time on every data tile.
+- `dashboard.html` holds the client's GSC and GA4 figures. Save it to a path the repo ignores, or outside the repo (for example `~/.seo-audits/<client>/dashboard.html`). Adding a `.gitignore` entry is a change that needs the owner's approval, like any other. Do not commit, publish or share the file, an exported copy (PDF, screenshot) or its figures without the owner's approval.
 - The checklist and actions tiles use the user's own roadmap and scorecard files. If those do not exist, they show `[Pending Connection]` too.
 - A static page cannot call a connector. State whether the numbers are a snapshot (pulled now, with the date) or live. Do not call a snapshot live.
 

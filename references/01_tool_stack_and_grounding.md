@@ -56,7 +56,7 @@ Tool names change between server versions. Check what the session exposes before
 ## 4. Credits and Cost
 
 - openseo research tools spend credits. Run focused queries.
-- A planned batch over 2,000 credits needs the user's approval before you start. State the batch and the estimate. Use the cost-estimate tools (for example `estimate_ai_visibility_cost`, `estimate_rank_tracker_cost`) where they exist.
+- Keep a running total of credits committed in the audit, as rows in the evidence log (section 6). Take each figure from the estimate, or from a balance figure if the session exposes one. Never guess a spend figure. Once the total passes 2,000, every later batch needs approval. A planned batch needs the user's approval before you start if it, added to that total, goes over 2,000 credits. State the batch and the estimate. Use the cost-estimate tools (for example `estimate_ai_visibility_cost`, `estimate_rank_tracker_cost`) where they exist.
 - Paid setup, one-off AI checks and recurring tracking also need approval.
 - Prefer one targeted call over many small ones.
 
@@ -80,6 +80,7 @@ Keep a running list. Every number in later modules must trace to one row.
 | ID | Metric / fact | Value | Tool | Date range / fetch date |
 |---|---|---|---|---|
 | E1 | Organic clicks | 1,234 | get_search_console_performance | 2026-09-25 to 2026-10-24 |
+| E2 | AI visibility batch, credits committed | 450 | estimate_ai_visibility_cost | 2026-10-24 |
 ```
 
 If a value has no row, it does not go in the report.

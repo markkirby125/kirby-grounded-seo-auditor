@@ -2,6 +2,8 @@
 
 **Purpose:** Measure where organic visibility comes from, check who AI search cites instead of the site, and turn the findings into ten ranked fixes.
 
+**Inputs:** `about-my-business.md` and `buyer-gap-audit.md` from module 02. For a scorecard-only request, do not run module 02. Ask the user for the buyer questions and target queries to use. The scorecard then carries no gap-derived rows and says in one line that the gap audit was not run. For a full audit, if either file is missing, run module 02 first.
+
 Every figure here comes from the evidence log (module 01, section 6). No source, no figure: write `[Pending Connection]`.
 
 The position bands below and the "under a day" Quick Wins limit are working heuristics from the source summary. They are not measured rules.
@@ -33,7 +35,7 @@ Use GA4 organic landing pages (when connected) to check that GSC clicks reach pa
 
 ## 2. AI Search Citation Benchmark
 
-1. Choose 5 to 15 core queries: the buyer questions from module 02 plus the top unbranded commercial queries.
+1. Choose 5 to 15 core queries: the buyer questions from module 02 (or the ones the user supplies for a scorecard-only run) plus the top unbranded commercial queries.
 2. For each query, record which brands and URLs the AI answers cite. Use `get_ai_visibility_results` and `get_ai_visibility_sources` when connected, or the DataForSEO AI data via `seo-dataforseo`.
 3. If no tool is connected, ask the user to run the queries by hand in the engines they care about and paste the answers. Do not recall from memory what an engine "usually" says.
 4. Record whether the site is cited, mentioned without a link, or absent.
@@ -44,7 +46,7 @@ Use GA4 organic landing pages (when connected) to check that GSC clicks reach pa
 | "[query]" | [engine] | No | competitor.com/page | Price table | E7 |
 ```
 
-Before the batch, state the estimated total credits in one sentence from `estimate_ai_visibility_cost`. If there is no estimate tool, state the call count (queries × engines), say that it is a count and not a cost, and ask the user for the per-call price. Ask for approval if the estimate is over 2,000 credits.
+Before the batch, state the estimated total credits in one sentence from `estimate_ai_visibility_cost`. If there is no estimate tool, state the call count (queries × engines), say that it is a count and not a cost, and ask the user for the per-call price. Ask for approval if the estimate, added to the credits already spent in this audit, is over 2,000.
 
 ---
 
@@ -65,7 +67,7 @@ Record findings with the URL. Pull the audit with `run_site_audit` and `get_audi
 
 ## 4. Top-10 Fixes Scorecard
 
-Rank fixes from sections 1 to 3 and from the module 02 gap audit.
+Rank fixes from sections 1 to 3 and, when it was run, from the module 02 gap audit.
 
 **Categories**
 

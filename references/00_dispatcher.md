@@ -18,6 +18,7 @@ These apply in every module. A module may add rules. It may not relax these.
 6. **Score every fix the same way.** `Priority = Business Payoff (1-5) / Implementation Effort (1-5)`. Higher is better. Show both inputs and the result.
 7. **Plain English.** Explain jargon the first time it appears. Short sentences.
 8. **Mark the source.** When you cite a number, name the tool and the date range it came from.
+9. **Respect the credit gate.** Any tool that spends credits follows the running-total approval rule in module 01, section 4, in every module and on every re-run.
 
 A **money page** is a URL that sells: a service, product, course or booking page.
 
