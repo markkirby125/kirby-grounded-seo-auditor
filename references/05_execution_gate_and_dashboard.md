@@ -73,6 +73,7 @@ No auto-publish. No CMS write, no repo push, no deploy until the owner approves.
 3. Ask for a clear "approved" for each item or batch.
 4. After approval, apply only what was approved. Use the release rules in [`kirby-seo-deployment`](../../kirby-seo-deployment/SKILL.md).
 5. Log each live change with its date, so results can be matched to it. The change-log method is in [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) (isolated SEO changelog protocol).
+   Skip any URL under a `FREEZE` entry (new or single-page tool pages that have just started getting impressions; directional, single-source, not a Google rule) unless the change is a defect fix or already filed there; log the skip. See `kirby-seo-telemetry` Module 15 §15.2.
 
 If the owner uses a coding agent or CMS plugin, give the diff as a prompt for it. Say that the gate still applies.
 
@@ -111,7 +112,7 @@ Build one screen. A single HTML or React artifact, saved as `dashboard.html` (or
 
 ## 5. Ongoing Cadence
 
-- Weekly: refresh the dashboard, tick the checklist, take the next 3 actions.
+- Weekly: refresh the dashboard, tick the checklist, take the next 3 actions (skip URLs inside a `FREEZE` window, §3 step 5).
 - Monitoring, GSC triage, drops and attribution: [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md).
-- Monthly: re-run modules 03 and 04 with fresh data and re-score.
+- Monthly: re-run modules 03 and 04 with fresh data and re-score (read-only for frozen URLs).
 - After 14 weeks: repeat the full audit from the dispatcher.
