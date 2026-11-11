@@ -16,12 +16,14 @@ The source summary suggests generating a broad "digital business card" of schema
 - `sameAs` arrays that link to real profiles the owner controls.
 - Breadcrumbs.
 - Article author markup that matches the visible byline.
+- Where the site's own `Organization` or `Person` entity node carries `sameAs`, put those nodes in one unified `@graph` instead of separate blocks (the `kirby-technical-aeo` Phase 3 rule). This adds no new type and leaves breadcrumbs and author markup page-level. It is identifier hygiene, not a ranking lever (directional, single-source, unverified).
 
 **Not allowed**
 
 - `AggregateOffer`, price ranges or other offer markup written to win rich results.
 - Third-party review aggregates or star ratings copied from other sites.
 - FAQ markup of any kind. FAQ copy stays visible page text.
+- `AggregateRating` of any kind, first-party ratings included. It is outside the allow-list above, so it does not stay in the markup you deliver. If a page already carries one, draft its removal for the review gate (section 3) and do not remove it before the owner approves; the owner decides the timing, not whether it stays. This is deliberately stricter than step 4 below, which only covers a drop or warning. The clear cases are non-ecommerce pages, and local pages whose reviews are unverified or not visible on the page. This is a conservative default (directional, single-source, unverified). No recovery timing is established, so after the approved removal check the page's structured-data report in Search Console and re-check it at the next monthly re-score.
 - Any markup built to chase a snippet.
 
 **Check before delivery**
@@ -31,7 +33,7 @@ The source summary suggests generating a broad "digital business card" of schema
 3. Quote the source URL for each value in the review notes.
 4. If the domain has a recent traffic drop or a structured-data warning, run the de-escalation steps in `kirby-technical-aeo` first.
 
-Local business markup and GBP matching: follow [`kirby-local-seo`](../../kirby-local-seo/SKILL.md). Do not add `LocalBusiness` or `WebSite` markup from this module.
+Local business markup and GBP matching: follow [`kirby-local-seo`](../../kirby-local-seo/SKILL.md). Do not add `LocalBusiness` or `WebSite` markup from this module. `LocalBusiness` JSON-LD is an identifier and consistency aid (`kirby-local-seo` Module 6 §6.10). It has no measured ranking lift (directional, single-source, unverified), so keep treating the Google Business Profile as the local lever (a working judgement, not a measured result).
 
 ---
 
