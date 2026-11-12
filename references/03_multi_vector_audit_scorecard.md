@@ -60,6 +60,8 @@ Crawl the money pages and top landing pages (module 01, section 5). Check for ea
 - Schema present, and whether every value is visible on the page (see module 05).
 - Internal links in and out. Orphan pages.
 - Page speed: use a measured result only.
+- Markup quality: semantic HTML5 landmarks and headings, excess `div` nesting, and generated boilerplate class names (for example `elementor-widget-wrap`). Schema review is separate (module 05). These are hygiene checks that help parsers and accessibility; they are not ranking levers, and there is no fixed threshold for "excess" nesting. List a finding as a Technical fix only when a specific URL shows a concrete problem; otherwise keep it as a note.
+- In that first screen of copy, note where the answer and the primary entity appear. A working heuristic is the first 25 words for the answer and the first 50-70 words for the entity (working heuristic from the source summary, unverified). Report it as an observation; it never feeds a score or the top-10 list.
 
 Record findings with the URL. Pull the audit with `run_site_audit` and `get_audit_issues` when connected.
 
