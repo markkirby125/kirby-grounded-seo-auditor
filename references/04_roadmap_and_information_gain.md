@@ -46,7 +46,7 @@ For each money page:
 | 1 | ... | Cost | "..." | [Pending Connection] | Commercial | None | Call recordings on pricing |
 ```
 
-The cap is 4 pillars and 40 articles. A small site needs fewer. More pages is not better.
+The cap is 4 pillars and 40 articles. A small site needs fewer. More pages is not better. Where the audit finds pages with zero clicks and zero conversions over a rolling 14-day window, consider pruning or consolidating them where the improve-that-page check below is not viable, before planning new articles. Low conversion alone is not a reason to prune: informational top-of-funnel pages convert rarely by design. Consolidated URLs 301 to the nearest live, relevant page, and the owner approves at the review gate (directional, unverified; same rule as [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) Module 5).
 
 ---
 
@@ -67,7 +67,7 @@ Generic articles add nothing a searcher cannot already read. Write from material
 - Quote or paraphrase what the owner said. Do not add facts the source does not contain.
 - If no source exists for a topic, mark the article `Needs owner input` and ask. Do not fill it with general SERP knowledge.
 - Sign each article with a named, real author the owner confirms, linked to a bio page the owner supplies; the visible byline must match the article author markup (module 05). Never invent an author, persona, credential or AI headshot; if none is supplied, publish it unsigned or under the business name.
-- Prefer the owner's first-party figures (results, SLAs, local pricing) over generic claims, and only ones the owner supplied. Placement follows the BLUF structure in [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md); do not restate it here.
+- Prefer the owner's first-party figures (results, service guarantees, local pricing) over generic claims, and only ones the owner supplied. Placement follows the BLUF structure in [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md); do not restate it here.
 - Do not paste personal data from calls. Remove client names unless they agreed in writing.
 - Run the draft through the anti-slop rules in [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) before review.
 
