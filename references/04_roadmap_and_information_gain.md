@@ -37,6 +37,7 @@ For each money page:
    - Links to its pillar and to the money page.
    - Has a target query with data, or the label `candidate (unverified)` with `[Pending Connection]` for volume. A candidate query is a placeholder, not a plan: do not write the article until data confirms the query.
 3. Check each target query against the site's existing pages. Do not plan an article for a query an existing page already ranks for. Improve that page.
+   - **Pre-Publication Semantic Drift Gate (batches of 3+):** Screen candidate queries/page types against existing pages via [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 20 before drafting (`ACCEPT` / `REWORK` / `REJECT`, proxy heuristic for `siteFocusScore`/`siteRadius`). Log `REJECT` rows in `roadmap.md` so they are not re-proposed.
 4. Drop any cluster idea you cannot tie to a buyer question or a query.
 
 ```markdown

@@ -33,17 +33,17 @@ Read only the module you need.
 | Which tools to use, connecting GSC/GA4/DataForSEO/crawler, what to do when a tool is missing | [`01_tool_stack_and_grounding.md`](01_tool_stack_and_grounding.md) |
 | Building the business positioning file, "what do buyers ask that the site does not answer", pricing/comparison/risk gaps, why AI search skips the brand | [`02_positioning_and_buyer_gap_audit.md`](02_positioning_and_buyer_gap_audit.md) |
 | Branded vs unbranded traffic, AI citation benchmark, the top-10 fixes scorecard | [`03_multi_vector_audit_scorecard.md`](03_multi_vector_audit_scorecard.md) |
-| Money-page rewrite plan, pillar and cluster map, content from the owner's own material, 30-day and 14-week calendar | [`04_roadmap_and_information_gain.md`](04_roadmap_and_information_gain.md) |
+| Money-page rewrite plan, pillar and cluster map, pre-publication drift screening hook (Module 20 router), content from the owner's own material, 30-day and 14-week calendar | [`04_roadmap_and_information_gain.md`](04_roadmap_and_information_gain.md) |
 | JSON-LD, title/H1/hero/FAQ copy, review gate, dashboard, weekly cadence | [`05_execution_gate_and_dashboard.md`](05_execution_gate_and_dashboard.md) |
 
 Requests that belong to a sibling skill:
 
 | Request | Go to |
 |---|---|
-| Anti-slop rules, BLUF and on-page GEO structure | [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) |
+| Anti-slop rules, BLUF, on-page GEO structure, pre-publication semantic drift gate (Module 20) | [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) |
 | Schema removal after a drop, `sameAs` triangulation | [`kirby-technical-aeo`](../../kirby-technical-aeo/SKILL.md) |
 | Publishing speed, staging, batch release | [`kirby-seo-deployment`](../../kirby-seo-deployment/SKILL.md) |
-| GSC triage, change logs, post-launch monitoring | [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) |
+| GSC triage, change logs, post-launch monitoring, core-update freeze & Ahrefs outlier forensics (Module 16) | [`kirby-seo-telemetry`](../../kirby-seo-telemetry/SKILL.md) |
 | GBP, map pack, service-area audits | [`kirby-local-seo`](../../kirby-local-seo/SKILL.md) |
 
 ---
