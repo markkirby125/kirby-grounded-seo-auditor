@@ -31,8 +31,8 @@ Read only the module you need.
 | If the request is about | Read |
 |---|---|
 | Which tools to use, connecting GSC/GA4/DataForSEO/crawler, what to do when a tool is missing | [`01_tool_stack_and_grounding.md`](01_tool_stack_and_grounding.md) |
-| Building the business positioning file, "what do buyers ask that the site does not answer", pricing/comparison/risk gaps, why AI search skips the brand | [`02_positioning_and_buyer_gap_audit.md`](02_positioning_and_buyer_gap_audit.md) |
-| Branded vs unbranded traffic, AI citation benchmark, the top-10 fixes scorecard | [`03_multi_vector_audit_scorecard.md`](03_multi_vector_audit_scorecard.md) |
+| Building the business positioning file, "what do buyers ask that the site does not answer", pricing/comparison/risk gaps, 4-point BOFU comparison & alternatives page audit criteria, why AI search skips the brand | [`02_positioning_and_buyer_gap_audit.md`](02_positioning_and_buyer_gap_audit.md) |
+| Branded vs unbranded traffic, AI citation benchmark, BOFU alternatives/comparison scorecard checks, the top-10 fixes scorecard | [`03_multi_vector_audit_scorecard.md`](03_multi_vector_audit_scorecard.md) |
 | Money-page rewrite plan, pillar and cluster map, pre-publication drift screening hook (Module 20 router), content from the owner's own material, 30-day and 14-week calendar | [`04_roadmap_and_information_gain.md`](04_roadmap_and_information_gain.md) |
 | JSON-LD, title/H1/hero/FAQ copy, review gate, dashboard, weekly cadence | [`05_execution_gate_and_dashboard.md`](05_execution_gate_and_dashboard.md) |
 

@@ -83,7 +83,7 @@ Build two views. Use real owner capacity: ask how many hours a week they have.
 | Week | Focus | Items |
 |---|---|---|
 | 1 | Quick wins and money pages | Title and H1 fixes, missing price/risk facts, core schema (module 05) |
-| 2 | Gap pages | Comparison page, alternatives page, cost page |
+| 2 | Gap pages | Comparison page, alternatives page (enforcing the 4-point scorecard check in module 02 §2.1 & [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 2 §2.50: founder headshot + LinkedIn/X byline, <33d pricing verification timestamp, semantic HTML `<table>`, and symmetrical competitor strengths), cost page |
 | 3 | First pillar | Pillar page plus the first 2 to 3 clusters |
 | 4 | Measure and adjust | GSC and GA4 check, update the scorecard |
 

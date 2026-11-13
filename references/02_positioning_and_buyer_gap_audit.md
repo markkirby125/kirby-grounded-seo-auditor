@@ -72,6 +72,19 @@ Method: after Marcus Sheridan, *They Ask, You Answer*. The source summary calls 
 
 For each gap record: the question, the URL checked, what you found, and the buyer search it fails (for example "[service] cost", "[brand] vs [competitor]"). Label any search that does not come from GSC, keyword data or the user as `candidate (unverified)` in the "Search it fails" column, and give it no volume. Check volume for the rest with module 01 tools. If keyword data is missing, write `[Pending Connection]`.
 
+### 2.1 BOFU Alternatives & Comparison Page Audit Criteria (Rob Hoffman Scorecard Check)
+
+When an alternatives (`/[competitor]-alternatives`) or 1v1 comparison (`/[brand]-vs-[competitor]`) page exists on the live domain, crawl the page and audit it against four mandatory conversion and AI-citation scorecard criteria (canonical architecture: [`kirby-aiseo-skill`](../../kirby-aiseo-skill/SKILL.md) Module 2 §2.50):
+
+| # | Audit Criterion | Live-Page Pass Condition | Typical Failure (Scorecard Fix Trigger) |
+|---|---|---|---|
+| **1** | **Founder Headshot & Verified Social Byline** | Hero byline displays a real founder/SME headshot (`<img>`) plus clickable outbound links to verified **LinkedIn** and **X (Twitter)** profiles and a first-person authority statement. | Anonymous "Admin/Team" byline, unlinked author name, or synthetic stock photo. |
+| **2** | **Pricing Verification Timestamp (<33 Days Old)** | Explicit pre-table or inline verification timestamp dated within the last **33 days** (e.g., *"Pricing checked against each provider's own pricing page in [Month Year]"*) alongside top/bottom freshness dates. | Undated pricing claims or stale year/month stamps (>33 days old) that AI crawlers discount. |
+| **3** | **Responsive Semantic HTML Table (Not a Static Graphic)** | Comparison matrix is rendered in selectable DOM HTML (`<table>`, `<thead>`, `<tbody>`, `<tr>`, `<td>`) with objective columns (`Platform`, `Starting price`, `Contract`, `Turnaround`, `Best for`). | Comparison grid embedded as a static PNG/JPEG/WebP image or unlabelled `<div>` soup unreadable by `OAI-SearchBot` / `PerplexityBot`. |
+| **4** | **Symmetrical Competitor Strengths Section** | Includes an explicit first-person bias disclosure (*"Position #1 is our company, discount accordingly"*), a dedicated **`<h2> When [Competitor] May Still Be the Better Fit`** section, and symmetric `Best for` / `Trade-off` bullets for every listed competitor (plus `"Where we fall short"` on the host entry). | One-sided self-promotional slam piece where the host brand wins every row with zero tradeoffs (discounted as self-review spam). |
+
+Record each failed criterion in `buyer-gap-audit.md` with the exact URL and fetch date, and feed it directly into the Module 03 Top-10 Fixes Scorecard.
+
 ---
 
 ## 3. AI-Simulation Check
